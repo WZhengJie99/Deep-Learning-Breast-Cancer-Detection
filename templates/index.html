@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Breast Cancer Predictor</h1>
+
+        <p style="margin-left: 2.5%;">This is a deep learning app to predict breast cancer using x-ray mammography images.</p>
+        <p style="margin-left: 2.5%; margin-bottom: -0.5%;">How to use:</p>
+        <p style="margin-left: 2.5%; margin-bottom: -0.5%;">Step 1: Upload an image by clicking on "Upload Image".</p>
+        <p style="margin-left: 2.5%;">Step 2: Click on "Predict" and wait for results.</p>
+
+        <div class="alert">
+            ⚠️ Important: This app is not a substitute for clinical decision-making and should consult healthcare specialists for more information.
+        </div>
+
+        <div class="main-body-container">
+            <div class="left-section">
+                <form method="POST" enctype="multipart/form-data" class="upload-form">
+                    <input type="file" name="file" accept="image/*" id="actual-upload-img-btn" hidden />
+                    <label for="actual-upload-img-btn" class="for-actual-upload-img-btn">Upload Image</label>
+                    <button type="submit">Predict</button>
+                </form>
+            </div>
+            <div class="right-section">
+                <p>Uploaded File: <span id="img-file-name-display"></span></p>
+            </div>
+        </div>
+
+        {% if uploaded_image %}
+        <div class="main-body-container">
+            <div class="left-section">
+                <div class="image-frame">
+                    <img src="{{ url_for('static', filename='uploads/' + uploaded_image) }}" alt="Uploaded Image" class="uploaded-img">
+                </div>
+            </div>
+            <div class="right-section">
+                <h3>Predictions:</h3>
+                {% for cls, prob in results.items() %}
+                    <div class="progress-bar">
+                        <div class="fill">{{ "%.1f"|format(prob) }}%</div>
+                        <span>{{ cls }}</span>
+                    </div>
+                {% endfor %}
+
+                <h2 class="likely">Likely {{ top_class }} ({{ "%.1f"|format(top_score) }}%)</h2>
+                
+                <div class="disclaimer">
+                    <h4>Disclaimer & Terms</h4>
+                    <p>This application is meant solely for educational, research, and demonstration use. It is not a medical instrument, and its forecasts should not be viewed as a clinical assessment. By utilizing this tool, you agree that:</p>
+                    <ul>
+                        <li>The outcomes are produced by an AI system trained on historical data and might not apply to all cases.</li><br>
+                        <li>No medical or personal information is kept or transmitted externally.</li><br>
+                        <li>You remain fully responsible for any decisions made based on the results of this application.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        <footer>
+            <div>
+                <p>Documentation: https://github.com/WZhengJie99/Deep-Learning-Breast-Cancer-Detection</p>
+                <p>&copy; Wong Zheng Jie 2025. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+    <script>
+        const fileInput = document.getElementById('actual-upload-img-btn');
+        const fileNameDisplay = document.getElementById('img-file-name-display');
+
+        fileInput.addEventListener('change', function() {
+            if (this.files && this.files.length > 0) {
+                fileNameDisplay.textContent = this.files[0].name;
+            } else {
+                fileNameDisplay.textContent = '';
+            }
+        });
+    </script>
+</body>
+</html>
