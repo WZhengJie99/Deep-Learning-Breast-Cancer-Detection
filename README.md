@@ -7,15 +7,15 @@
 
 ![Python](https://img.shields.io/badge/python-3.10.18-blue.svg) ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.19.0-orange.svg) ![Keras](https://img.shields.io/badge/Keras-3.10.0-red.svg)  
 
-<p style="display:flex; gap:10px; align-items:flex-start;">
+</div>
 
-  <img style="height:400px; object-fit:cover;" alt="A_0005_1 RIGHT_CC" src="https://github.com/user-attachments/assets/551ce974-b2d7-4a5c-87b7-15bcba048682" />
-  <img style="height:400px; object-fit:cover;" alt="A_1276_1 RIGHT_CC" src="https://github.com/user-attachments/assets/95ed2c5e-02ab-4ef9-bc26-fe79fffd3a36" />
-  <img style="height:400px; object-fit:cover;" alt="A_1399_1 RIGHT_CC" src="https://github.com/user-attachments/assets/b677b356-0c46-4eb0-b1b3-374136a9bc2f" />
+<p align="center" display:flex; gap:10px; align-items:flex-start;">
+
+  <img width="18.5%" style="object-fit:cover;" alt="A_0005_1 RIGHT_CC" src="https://github.com/user-attachments/assets/551ce974-b2d7-4a5c-87b7-15bcba048682" />
+  <img width="23%" style="object-fit:cover;" alt="A_1276_1 RIGHT_CC" src="https://github.com/user-attachments/assets/95ed2c5e-02ab-4ef9-bc26-fe79fffd3a36" />
+  <img width="21%" style="object-fit:cover;" alt="A_1399_1 RIGHT_CC" src="https://github.com/user-attachments/assets/b677b356-0c46-4eb0-b1b3-374136a9bc2f" />
 
 </p>
-
-</div>
 
 ## Table of Contents
 
