@@ -27,6 +27,7 @@
 * [Installation and Running](#installation-and-running)
 * [Using the UI](#using-the-ui)
 * [Disclaimer](#disclaimer)
+* [References](#references)
 
 ---
 
