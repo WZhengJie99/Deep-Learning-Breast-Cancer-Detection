@@ -56,6 +56,8 @@ Although the models are not yet suitable for clinical use, the findings shed lig
 
 ## Models Implemented
 
+<div align="center"><img alt="Model Evaluation Results Comparison" src="https://github.com/user-attachments/assets/d39782ad-19ce-464f-8874-fc99ba52ca06" /></div><br>
+
 - **Naive Baseline CNN** – simple reference model
 - **Baseline CNN** – batch normalization, L2 regularization, Global Average Pooling
 - **Overfitting Model** – tests complexity limitations
@@ -69,14 +71,13 @@ Although the models are not yet suitable for clinical use, the findings shed lig
 
 ## Results Summary
 
-<div align="center"><img alt="Model Evaluation Results Comparison" src="https://github.com/user-attachments/assets/d39782ad-19ce-464f-8874-fc99ba52ca06" /></div>
-
+<div align="center"><img width="80%" alt="image" src="https://github.com/user-attachments/assets/fddbb225-3b5a-45d4-899c-6de83a904e4a" /></div><br>
 
 **Findings:**
 - Narrower architecture improved generalization compared to Wider and Deeper models.
 - Transfer learning alone tended to misclassify other classes as Cancer.
-- Multi-branch hybrid was the most balanced performer.
-- Prediction for cancer class requires advanced segemntation for masks to identify subtle ROIs.
+- Major early stage misclassifications due to minimal visual differences between the classes (Benign, Cancer, Normal).
+- Despite Multi-Branching, cancer classification requires thorough segmentation procedures to identify subtle lesions.
 
 ---
 
