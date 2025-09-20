@@ -1,3 +1,4 @@
+
 <div align="center">
 
 # Deep Learning Breast Cancer Detection
@@ -71,7 +72,7 @@ Although the models are not yet suitable for clinical use, the findings shed lig
 
 ## Results Summary
 
-<div align="center"><img width="80%" alt="image" src="https://github.com/user-attachments/assets/fddbb225-3b5a-45d4-899c-6de83a904e4a" /></div><br>
+<div align="center"><img width="80%" alt="Model Comparison on Weighted Averages and Accuracy Chart" src="https://github.com/user-attachments/assets/fddbb225-3b5a-45d4-899c-6de83a904e4a" /></div><br>
 
 **Findings:**
 - Narrower architecture improved generalization compared to Wider and Deeper models.
@@ -89,7 +90,7 @@ It combines the strengths of a **custom Narrower CNN** and a **pre-trained Effic
 ### Architecture Overview
 
 <div align="center">
-<img width="90%" alt="3-Branch Model Architecture" src="https://github.com/user-attachments/assets/dbf13c82-a8bf-4fab-922a-0681c4cc2418" />
+<img width="90%" alt="Narrower and Transfer Learning Multi-Branch Model Architecture" src="https://github.com/user-attachments/assets/7e7ee4b1-8362-4e57-8886-fae8bd1fe7a7" />
 </div>
 
 - **Branch 1**: Narrower CNN
@@ -178,7 +179,7 @@ Then open: http://127.0.0.1:5000/
 
 ---
 
-## Disclaimer
+## 🔴 Disclaimer
 
 - This project and application is meant solely for educational, research, and demonstration use. It is not yet suitable as a medical instrument, and its forecasts should not be viewed as a clinical assessment.
 
