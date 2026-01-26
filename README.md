@@ -43,6 +43,10 @@ Although the models are not yet suitable for clinical use, the findings shed lig
 - **Workflow**: Based on François Chollet’s *Deep Learning Workflow*
 - **UI**: Simple Flask-based app for testing predictions locally
 
+For a complete description of the experiments, results, and analysis, please refer to the full dissertation report:
+
+📄 **[Final Dissertation Report (PDF)](./WZJ_CM3070_FYP_Dissertation_2025_Final_Report.pdf)**
+
 ---
 
 ## Dataset: Mini DDSM
